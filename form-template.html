@@ -1,0 +1,53 @@
+<form>
+    <h1>CS Courses</h1>
+    <p>Sign up for your course!</p>
+
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" value="d" />
+            <span class="error-span">Error here</span>
+        </li>
+        <li>
+            <label for="mail">E-mail:</label>
+            <input type="text" id="mail" name="user_email" />
+            <span class="error-span">Error here</span>
+        </li>
+        <li>
+            <label for="topic">Topic:</label>
+            <select name="topic" id="topic">
+                <option value="">--Please choose a topic--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+            </select>
+        </li>
+        <li>
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="">--Please choose a course--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+            </select>
+        </li>
+        <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+            <button type="submit">Send your message</button>
+        </li>
+    </ul>
+</form>
+
+<!-- <script type="text/javascript">
+    const name = document.getElementById('name');
+    let state = '';
+    name.value = state;
+    name.oninput = (e) => {
+        console.log(e.target.value);
+        state = '';
+        name.value = state;
+    }
+</script> -->
